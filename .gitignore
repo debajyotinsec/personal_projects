@@ -1,0 +1,3 @@
+./reminders/.env
+./reminders/__pycache__/
+./reminders/*.py[cod]
