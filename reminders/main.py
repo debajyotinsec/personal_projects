@@ -1,9 +1,10 @@
 from Configuration import *
 from constants import *
-from send_texts import *
+# from send_texts import *
 import argparse
 import logging
 from pathlib import Path
+from SendTexts import *
 
 def main():
     # setup the argument parser
@@ -47,10 +48,12 @@ def main():
 
     message_body = dict_of_message_bodies.get(event_name, f"No reminder message for event '{event_name}'.")
 
+    send_texts = SendTexts()
+
     if config.text_message_service == "twilio":
-        send_sms_via_twilio(config, message_body)
+        send_texts.send_sms_via_twilio(config, message_body)
     elif config.text_message_service == "email-to-sms":
-        send_sms_via_email(config, message_body)
+        send_texts.send_sms_via_email(config, message_body)
     else:
         logger.error(f"Error: Unknown text message service '{config.text_message_service}'. Please check your configuration.")
 

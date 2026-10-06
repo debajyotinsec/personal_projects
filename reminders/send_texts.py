@@ -1,3 +1,10 @@
+
+#
+# Below methods are moved to SendTexts.py 
+# file and are now part of the SendTexts class. 
+# This is now obsolete.
+#
+
 from Configuration import *
 from twilio.rest import Client
 import smtplib
