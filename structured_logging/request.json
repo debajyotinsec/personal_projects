@@ -1,0 +1,43 @@
+{
+    "basic_details": {
+        "first_name": "John",
+        "last_name": "Doe",
+        "email": "john.doe@example.com",
+        "phone_number": "123-456-7890",
+        "date_of_birth": "2000-01-01"
+    },
+    "address": [{
+            "address_counter": 1,
+            "address_line_1": "123 Main St",
+            "address_line_2": "Apt 4B",
+            "city": "Anytown",
+            "state": "CA",
+            "zip_code": "12345",
+            "country": "USA"
+        },
+        {
+            "address_counter": 2,
+            "address_line_1": "456 Elm St",
+            "address_line_2": "",
+            "city": "Othertown",
+            "state": "NY",
+            "zip_code": "67890",
+            "country": "USA"
+        }
+    ],
+    "saved_cards": [{
+            "card_counter": 1,
+            "card_type": "Visa",
+            "card_number": "1234567890123456",
+            "expiration_date": "12/25",
+            "cardholder_name": "John Doe"
+        },
+        {
+            "card_counter": 2,
+            "card_type": "MasterCard",
+            "card_number": "9876543210987654",
+            "expiration_date": "11/24",
+            "cardholder_name": "Jane Doe"
+        }
+    ]
+}
